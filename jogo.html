@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida em 2D</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; margin: auto; }
+        #startButton, #restartButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 1;
+            display: none; /* Inicialmente escondido */
+        }
+        #startButton {
+            display: block; /* Mostrar apenas o botão de "Jogar" no início */
+        }
+        #score {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br>
+    <!-- Botão de iniciar o jogo -->
+    <button id="startButton" onclick="startGame()">Jogar</button>
+    <!-- Botão de jogar novamente -->
+    <button id="restartButton" onclick="restartGame()">Jogar Novamente</button>
+    <!-- Pontuação do jogo -->
+    <div id="score">Pontuação: 0</div>
+    <!-- Incluindo a biblioteca Phaser -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+    <!-- Incluindo o script do jogo -->
+    <script src="game.js"></script>
+</body>
+</html>
