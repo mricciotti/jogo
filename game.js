@@ -20,7 +20,7 @@ let player;
 let cursors;
 let enemyCars = [];
 let track;
-const LEFT_LIMIT = 150;  
+const LEFT_LIMIT = 190;  
 const RIGHT_LIMIT = 650; 
 const MIN_DISTANCE = 100; 
 let score = 0;
@@ -30,9 +30,9 @@ let gameStarted = false;
 const game = new Phaser.Game(config);
 
 function preload() {
-    this.load.image('car', 'img/car.png');
-    this.load.image('enemyCar', 'img/enemy_car.png');
-    this.load.image('track', 'img/track.png');
+    this.load.image('car', './img/car.png');
+    this.load.image('enemyCar', './img/enemy_car.png');
+    this.load.image('track', './img/track.png');
 }
 
 function create() {
