@@ -33,9 +33,9 @@ const game = new Phaser.Game(config);
 
 function preload() {
     // Carregando imagens
-    this.load.image('car', 'car.png');
-    this.load.image('enemyCar', 'enemy_car.png');
-    this.load.image('track', 'track.png');
+    this.load.image('car', 'img/car.png');
+    this.load.image('enemyCar', 'img/enemy_car.png');
+    this.load.image('track', 'img/track.png');
 }
 
 function create() {
